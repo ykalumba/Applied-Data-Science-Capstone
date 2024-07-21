@@ -122,10 +122,10 @@ Functions from the Scikit-learn library are used to create our machine learning 
 6. Evaluate the models based on their accuracy scores and confusion matrix using the score() function and confusion_matrix from sklearn.metrics
 
 Putting the results of all 4 models side by side, we can see that they all share the same accuracy score and confusion matrix when tested on the test set. Therefore, their GridSearchCV best scores are used to rank them instead. Based on the GridSearchCV best scores, the models are ranked in the following order with the first being the best and the last one being the worst:
-- Decision tree (GridSearchCV best score: 0.8892857142857142) 
-- K nearest neighbors, KNN (GridSearchCV best score: 0.8482142857142858)
-- Support vector machine, SVM (GridSearchCV best score: 0.8482142857142856)
-- Logistic regression (GridSearchCV best score: 0.8464285714285713)
+- Decision tree 
+- K nearest neighbors, KNN 
+- Support vector machine, SVM 
+- Logistic regression 
 
 ## Discussion
 From the data visualization section, we can see that some features may have correlation with the mission outcome in several ways. For example, with heavy payloads the successful landing or positive landing rate are more for orbit types Polar, LEO and ISS. However, for GTO, we cannot distinguish this well as both positive landing rate and negative landing(unsuccessful mission) are both there here.
